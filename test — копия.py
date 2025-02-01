@@ -1,2 +1,2 @@
 def function():
-    print(1111111)
+    print(name)
