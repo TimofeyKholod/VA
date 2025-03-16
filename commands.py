@@ -1,11 +1,11 @@
-def function(name):
-    # Server Start
-    print("Server_task")
-    # Server End
-    # Client Start
-    print("client")
-    # Client End
-    
+"""func function"""
+# Server Start
+print("Server_task")
+# Client Start
+print("client")
+# Client End
+"""func open_tab"""
+print("open tab")
     
     
 
