@@ -1,4 +1,4 @@
-"""func function"""
+"""func open_new_tab"""
 print("Server_task")
 gen_text("Исполняю")
 # Client Start
