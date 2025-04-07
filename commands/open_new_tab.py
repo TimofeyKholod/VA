@@ -1,4 +1,3 @@
-print("Server_task")
 gen_text("Исполняю")
 # Client Start
-print("client")
+webbrowser.open(f'https://www.{ver[0]}.com/', new=1)
