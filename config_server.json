@@ -1,3 +1,4 @@
 {
-  "url_for_phrases": "https://raw.githubusercontent.com/TimofeyKholod/VA/main/phrases.json"
+  "url_for_phrases": "https://raw.githubusercontent.com/TimofeyKholod/VA/main/phrases.json",
+  "question_words":["как","что","где","когда","зачем", "почему","для чего","кто","чей","который","сколько","куда","отчего","насколько","кого","с каких пор"]
 }
