@@ -13,20 +13,16 @@ from gpt import Mistralai
 tts = TTS()
 stt = STT()
 last_task = ""
-name = False
 def send_to_creator(e):
-    bot = telebot.TeleBot(config)
+    bot = telebot.TeleBot(config["bot_token"])
     bot.send_message(chat_id=-1002099678922, text=e)
 def request_task_to_analyse(speech_text):
-    for name in config["active_names"]:
-        if name in speech_text:
-            speech_text.replace(name, "")
-            break
-    response = requests.post(url, json=data)
+    data = {"message": speech_text}
+    url = "https://voiceassistiant.pythonanywhere.com/analyse_command"
+    response = requests.get(url, json=data)
     if response.status_code == 200:
         res = response.json()
-        threading.Thread(target=do_code, args=(res,)).start()
-        threading.Thread(target=voice_syntize, args=(res, )).start()
+        print(res)
     elif response.status_code == 404:
         pass
     else:
